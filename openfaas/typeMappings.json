@@ -1,0 +1,35 @@
+[
+	{
+		"functionType": "Split",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/split"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Process",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/process"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Assemble",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/assemble"
+				}
+			}
+		]
+	}
+]
