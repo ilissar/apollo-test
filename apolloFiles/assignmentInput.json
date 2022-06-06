@@ -1,0 +1,6 @@
+{
+  "stringToProcess": "one one one two one",
+  "batchSize": 2,
+  "thresholdSize": 2,
+  "pattern": "one"
+}

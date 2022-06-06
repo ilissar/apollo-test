@@ -1,4 +1,12 @@
 .idea/
+.gradle/
+.settings
+.classpath
+.project
+gradlew
+gradlew.bat
+openfaas/build
+openfaas/template
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -12,7 +20,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-downloads/
+downloads/sduso
 eggs/
 .eggs/
 lib/

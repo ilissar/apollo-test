@@ -1,0 +1,35 @@
+[
+	{
+		"functionType": "Split",
+		"resources": [
+			{
+				"type": "Serverless",
+				"properties": {
+					"Uri": "http://127.0.0.1:8080/Split"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Process",
+		"resources": [
+			{
+				"type": "Serverless",
+				"properties": {
+					"Uri": "http://127.0.0.1:8081/Process"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Assemble",
+		"resources": [
+			{
+				"type": "Serverless",
+				"properties": {
+					"Uri": "http://127.0.0.1:8082/Assemble"
+				}
+			}
+		]
+	}
+]

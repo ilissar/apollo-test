@@ -20,7 +20,9 @@ def cloud_function(json_input):
         to_save = int(str(to_save)[5:-2])
         occurrence_index = find_nth(string_to_process, pattern, to_save)
         system_index = find_nth(string_to_process, ";s=", 0)
-        string_to_process = string_to_process[:occurrence_index] + string_to_process[occurrence_index:].replace(pattern, "")[:-(len(string_to_process)-system_index)]
+        string_to_process = string_to_process[:occurrence_index] + string_to_process[occurrence_index:].replace(pattern,
+                                                                                                                "")[
+                                                                   :-(len(string_to_process) - system_index)]
     else:
         if ";s" in string_to_process:
             string_to_process = string_to_process[:-2]
@@ -34,11 +36,3 @@ def cloud_function(json_input):
         "count": count
     }
     return res
-
-
-input1 = {
-    "stringToProcess": "one one;s=1",
-    "pattern": "one"
-}
-
-cloud_function(input1)

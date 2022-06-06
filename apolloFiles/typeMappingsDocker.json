@@ -1,0 +1,35 @@
+[
+	{
+		"functionType": "Split",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "docker.io/ilissar/split"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Process",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "docker.io/ilissar/process"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Assemble",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "docker.io/ilissar/assemble"
+				}
+			}
+		]
+	}
+]

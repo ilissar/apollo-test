@@ -21,21 +21,27 @@ workflowBody:
         - name: "originalStr"
           type: "string"
           source: "assignment/stringToProcess"
+        - name: "pattern"
+          type: "string"
+          source: "assignment/pattern"
         - name: "batchSize"
           type: "number"
           source: "assignment/batchSize"
+        - name: "thresholdSize"
+          type: "number"
+          source: "assignment/thresholdSize"
       dataOuts:
         - name: "stringToProcess"
           type: "collection"
-        - name: "patter"
+        - name: "pattern"
           type: "string"
   - parallelFor:
       name: "forEachProcess"
       dataIns:
-        - name: "iterator"
+        - name: "stringToProcess"
           type: "collection"
           source: "Split/stringToProcess"
-      iterators: ["iterator"]
+      iterators: ["stringToProcess"]
       loopBody:
         - function:
             name: "Process"
@@ -43,7 +49,7 @@ workflowBody:
             dataIns:
               - name: "stringToProcess"
                 type: "collection"
-                source: "forEachProcess/iterator"
+                source: "forEachProcess/stringToProcess"
               - name: "pattern"
                 type: "string"
                 source: "assignment/pattern"

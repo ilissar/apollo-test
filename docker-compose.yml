@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  split:
+    image: docker.io/ilissar/split
+    ports:
+      - "8080:8080"
+  process:
+    image: docker.io/ilissar/process
+    ports:
+      - "8081:8080"
+  assemble:
+    image: docker.io/ilissar/assemble
+    ports:
+      - "8082:8080"

@@ -52,17 +52,6 @@ def cloud_function(json_input):
     # return the result
     res = {
         "stringToProcess": result,
-        "pattern": json_input["pattern"]
-
+        "pattern": pattern_word
     }
     return res
-
-
-input1 = {
-    "stringToProcess": "one one one two one",
-    "batchSize": 2,
-    "thresholdSize": 1,
-    "pattern": "one"
-}
-
-cloud_function(input1)
