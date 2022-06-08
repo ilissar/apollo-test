@@ -52,6 +52,6 @@ def cloud_function(json_input):
     # return the result
     res = {
         "stringToProcess": result,
-        "pattern": pattern_word
+        # "pattern": pattern_word
     }
     return res

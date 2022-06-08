@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080 # replace with OpenFaaS gateway address
+functions:
+  Assemble:
+    lang: python3-flask
+    handler: ../functions/Assemble
+    image: ilissar/assemble
+  Process:
+    lang: python3-flask
+    handler: ../functions/Process
+    image: ilissar/process
+  Split:
+    lang: python3-flask
+    handler: ../functions/Split
+    image: ilissar/split
+  

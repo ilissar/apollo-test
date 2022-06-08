@@ -13,7 +13,7 @@ def cloud_function(json_input):
     pattern = json_input["pattern"]
 
     # Processing
-    count = len(re.findall(pattern, string_to_process))
+    # count = len(re.findall(pattern, string_to_process))
 
     if ";s=" in string_to_process:
         to_save = re.findall(r";s=\d+", string_to_process)
@@ -33,6 +33,6 @@ def cloud_function(json_input):
     # return the result
     res = {
         "processedString": string_to_process,
-        "count": count
+        # "count": count
     }
     return res
