@@ -28,7 +28,7 @@ workflowBody:
       loopBody:
         - function:
             name: "Process"
-            type: "Shift"
+            type: "Process"
             dataIns:
               - name: "originalChar"
                 type: "collection"

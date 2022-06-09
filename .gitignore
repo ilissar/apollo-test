@@ -4,4 +4,8 @@ gradle/
 venv
 gradlew
 gradlew.bat
-openfaas/template
+assignment/openfaas/template
+assignment/openfaas/build
+caesar/openfaas/template
+caesar/openfaas/build
+logging/
