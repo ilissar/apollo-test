@@ -31,17 +31,17 @@ workflowBody:
           type: "number"
           source: "assignment/thresholdSize"
       dataOuts:
-        - name: "stringToProcess"
+        - name: "stringArr"
           type: "collection"
-        - name: "pattern"
-          type: "string"
+        - name: "count"
+          type: "number"
   - parallelFor:
       name: "forEachProcess"
       dataIns:
-        - name: "stringToProcess"
+        - name: "iterator"
           type: "collection"
-          source: "Split/stringToProcess"
-      iterators: ["stringToProcess"]
+          source: "Split/stringArr"
+      iterators: ["iterator"]
       loopBody:
         - function:
             name: "Process"
@@ -49,22 +49,17 @@ workflowBody:
             dataIns:
               - name: "stringToProcess"
                 type: "collection"
-                source: "forEachProcess/stringToProcess"
+                source: "forEachProcess/iterator"
               - name: "pattern"
                 type: "string"
                 source: "assignment/pattern"
             dataOuts:
               - name: "processedString"
                 type: "string"
-              - name: "count"
-                type: "number"
       dataOuts:
         - name: "processedString"
           type: "collection"
           source: "Process/processedString"
-        - name: "count"
-          type: "collection"
-          source: "Process/count"
   - function:
       name: "Assemble"
       type: "Assemble"
@@ -72,18 +67,13 @@ workflowBody:
         - name: "processedString"
           type: "collection"
           source: "forEachProcess/processedString"
-        - name: "count"
-          type: "collection"
-          source: "forEachProcess/count"
       dataOuts:
         - name: "encodedString"
           type: "string"
-        - name: "count"
-          type: "number"
 dataOuts:
   - name: "encodedString"
     type: "string"
     source: "Assemble/encodedString"
   - name: "result"
     type: "number"
-    source: "Assemble/count"
+    source: "Split/count"

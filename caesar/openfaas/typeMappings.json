@@ -1,0 +1,35 @@
+[
+	{
+		"functionType": "Split",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/caesar-split"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Process",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/caesar-process"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Assemble",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "ilissar/caesar-assemble"
+				}
+			}
+		]
+	}
+]

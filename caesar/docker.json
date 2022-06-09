@@ -5,7 +5,7 @@
 			{
 				"type": "Local",
 				"properties": {
-					"Image": "docker.io/ilissar/split"
+					"Image": "ilissar/caesar-split"
 				}
 			}
 		]
@@ -16,7 +16,7 @@
 			{
 				"type": "Local",
 				"properties": {
-					"Image": "docker.io/ilissar/process"
+					"Image": "ilissar/caesar-process"
 				}
 			}
 		]
@@ -27,7 +27,7 @@
 			{
 				"type": "Local",
 				"properties": {
-					"Image": "docker.io/ilissar/assemble"
+					"Image": "ilissar/caesar-assemble"
 				}
 			}
 		]
