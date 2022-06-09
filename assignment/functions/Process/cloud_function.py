@@ -9,6 +9,7 @@ def find_nth(haystack, needle, n):
 
 
 def cloud_function(json_input):
+    print(str(json_input))
     string_to_process = json_input["stringToProcess"]
     pattern = json_input["pattern"]
 

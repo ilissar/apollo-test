@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eo pipefail
+#set -eo pipefail
 
 if ! type "faas-cli" &> /dev/null
 then

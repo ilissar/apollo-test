@@ -2,6 +2,7 @@ import re
 
 
 def cloud_function(json_input):
+    print(str(json_input))
     # original - string that have to be broken into array
     original = json_input["stringToProcess"]
     # pattern_word - word that will be used to count occurrences;
@@ -52,6 +53,6 @@ def cloud_function(json_input):
     # return the result
     res = {
         "stringToProcess": result,
-        # "pattern": pattern_word
+        "count": count
     }
     return res

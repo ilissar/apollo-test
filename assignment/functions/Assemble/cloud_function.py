@@ -1,4 +1,5 @@
 def cloud_function(json_input):
+    print(str(json_input))
     processed_string = json_input["processedString"]
     # count = json_input["count"]
 

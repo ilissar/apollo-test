@@ -18,7 +18,7 @@ workflowBody:
       name: "Split"
       type: "Split"
       dataIns:
-        - name: "originalStr"
+        - name: "stringToProcess"
           type: "string"
           source: "assignment/stringToProcess"
         - name: "pattern"
@@ -31,7 +31,7 @@ workflowBody:
           type: "number"
           source: "assignment/thresholdSize"
       dataOuts:
-        - name: "stringArr"
+        - name: "stringToProcess"
           type: "collection"
         - name: "count"
           type: "number"

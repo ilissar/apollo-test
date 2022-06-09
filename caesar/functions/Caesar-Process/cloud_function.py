@@ -1,10 +1,11 @@
 def cloud_function(json_input):
+    print(str(json_input))
     original_char = json_input["char"]
     offset = json_input["offset"]
 
     # Processing
-    alpha = list['abcdefghijklmnoqrstuvwxyz']
-    ALPHA = list['ABCDEFGHIJKLMNOQRSTUVWXYZ']
+    alpha = list('abcdefghijklmnopqrstuvwxyz')
+    ALPHA = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     result = original_char
     if original_char in alpha or original_char in ALPHA:
         arr = alpha if original_char in alpha else ALPHA

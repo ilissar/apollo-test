@@ -1,4 +1,5 @@
 def cloud_function(json_input):
+    print(str(json_input))
     char_list = json_input["shiftedArr"]
 
     # Processing

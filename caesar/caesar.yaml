@@ -12,7 +12,7 @@ workflowBody:
       name: "Split"
       type: "Split"
       dataIns:
-        - name: "originalStr"
+        - name: "original"
           type: "string"
           source: "caesar/original"
       dataOuts:
@@ -30,7 +30,7 @@ workflowBody:
             name: "Process"
             type: "Process"
             dataIns:
-              - name: "originalChar"
+              - name: "char"
                 type: "collection"
                 source: "forEachShift/iterator"
               - name: "offset"
@@ -47,7 +47,7 @@ workflowBody:
       name: "Assemble"
       type: "Assemble"
       dataIns:
-        - name: "shiftedCharArray"
+        - name: "shiftedArr"
           type: "collection"
           source: "forEachShift/shiftedChar"
       dataOuts:
