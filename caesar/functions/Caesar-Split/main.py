@@ -16,10 +16,10 @@ def lambda_handler(event, context):
     # read in the args from the POST object
     json_input = json.loads(event["body"])
     res = cloud_function(json_input)
+    print("main.lambda_handler")
     print(json_input)
     print(res)
-    print(json.dumps(res))
-    return {"statusCode": 200, "body": json.dumps(res)}
+    return {"statusCode": 200, "body": res}
 
 
 ##################################################

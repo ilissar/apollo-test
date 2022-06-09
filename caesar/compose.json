@@ -3,9 +3,9 @@
 		"functionType": "Split",
 		"resources": [
 			{
-				"type": "Local",
+				"type": "Serverless",
 				"properties": {
-					"Image": "ilissar/caesar-split"
+					"Uri": "http://127.0.0.1:8080/"
 				}
 			}
 		]
@@ -14,9 +14,9 @@
 		"functionType": "Process",
 		"resources": [
 			{
-				"type": "Local",
+				"type": "Serverless",
 				"properties": {
-					"Image": "ilissar/caesar-process"
+					"Uri": "http://127.0.0.1:8081/"
 				}
 			}
 		]
@@ -25,9 +25,9 @@
 		"functionType": "Assemble",
 		"resources": [
 			{
-				"type": "Local",
+				"type": "Serverless",
 				"properties": {
-					"Image": "ilissar/caesar-assemble"
+					"Uri": "http://127.0.0.1:8082/"
 				}
 			}
 		]

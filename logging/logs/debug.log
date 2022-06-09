@@ -1,13 +1,7 @@
-2022-06-09 15:28:40,247 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:123] Using UNIX Socket for connecting to Docker Host. from Demo
-2022-06-09 15:28:40,377 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:74] Docker network for function containers already exits! Make sure this is set up correctly! from Demo
-2022-06-09 15:28:40,679 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:97] Discovered function ilissar/split at port 8803 with id ffc18cb57ab16e3774d6fa88cf56bcb232ed538692773d7856e6aea4b8326fba. from Demo
-2022-06-09 15:28:40,684 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:97] Discovered function ilissar/assemble at port 8801 with id 6cad6d43048d6685ad3a566995beff9b521305725257d45c1be6e97ea530f924. from Demo
-2022-06-09 15:28:40,690 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:97] Discovered function ilissar/process at port 8802 with id fd8988e9d0bd96e58b280e713a85e5cdee2b772cc863924ec8f00a1b34ed82de. from Demo
-2022-06-09 15:28:40,734 INFO [pool-1-thread-1] a.u.d.e.c.v.VerticleManager [VerticleManager.java:62] Deployed 40 verticles. from Demo
-2022-06-09 15:28:40,742 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:243] Already running: ilissar/assemble from Demo
-2022-06-09 15:28:40,747 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:243] Already running: ilissar/process from Demo
-2022-06-09 15:28:40,750 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:243] Already running: ilissar/split from Demo
-2022-06-09 15:28:40,755 INFO [pool-1-thread-1] a.u.d.e.c.c.Control [Control.java:63] Pausing enactment. from Demo
-2022-06-09 15:28:45,158 INFO [AWT-EventQueue-0] a.u.d.e.c.c.Control [Control.java:53] Resuming enactment. from Demo
-2022-06-09 15:28:45,176 INFO [vert.x-eventloop-thread-2] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:156] Local function ilissar/split triggerred. from Demo
-2022-06-09 15:28:45,338 INFO [vert.x-eventloop-thread-2] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:161] Local function ilissar/split finished. from Demo
+2022-06-09 16:16:33,708 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:123] Using UNIX Socket for connecting to Docker Host. from Demo
+2022-06-09 16:16:33,832 INFO [pool-1-thread-1] a.u.d.e.d.m.ContainerManagerDockerAPI [ContainerManagerDockerAPI.java:74] Docker network for function containers already exits! Make sure this is set up correctly! from Demo
+2022-06-09 16:16:33,897 INFO [pool-1-thread-1] a.u.d.e.c.v.VerticleManager [VerticleManager.java:62] Deployed 40 verticles. from Demo
+2022-06-09 16:16:33,901 INFO [pool-1-thread-1] a.u.d.e.c.c.Control [Control.java:63] Pausing enactment. from Demo
+2022-06-09 16:16:35,885 INFO [AWT-EventQueue-0] a.u.d.e.c.c.Control [Control.java:53] Resuming enactment. from Demo
+2022-06-09 16:16:35,996 INFO [vert.x-eventloop-thread-1] a.u.d.e.e.s.ServerlessFunction [ServerlessFunction.java:61] Serverless function http://127.0.0.1:8080/ triggerred. from Demo
+2022-06-09 16:16:36,090 INFO [vert.x-eventloop-thread-1] a.u.d.e.e.s.ServerlessFunction [ServerlessFunction.java:63] Serverless function http://127.0.0.1:8080/ finished from Demo

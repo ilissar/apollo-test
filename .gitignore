@@ -8,4 +8,4 @@ assignment/openfaas/template
 assignment/openfaas/build
 caesar/openfaas/template
 caesar/openfaas/build
-logging/
+logging/**

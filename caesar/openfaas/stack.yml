@@ -5,14 +5,14 @@ provider:
 functions:
   Assemble:
     lang: python3-flask
-    handler: ../functions/Assemble
-    image: ilissar/assemble
+    handler: ../functions/Caesar-Assemble
+    image: ilissar/caesar-assemble
   Process:
     lang: python3-flask
-    handler: ../functions/Process
-    image: ilissar/process
+    handler: ../functions/Caesar-Process
+    image: ilissar/caesar-process
   Split:
     lang: python3-flask
-    handler: ../functions/Split
-    image: ilissar/split
+    handler: ../functions/Caesar-Split
+    image: ilissar/caesar-split
   

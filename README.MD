@@ -1,9 +1,10 @@
-Test assignment for APOLLO.
+Test assignment for Apollo
 
-Files that should be used for Apollo software in ./apolloFiles 
+Test assignment files in assignment/
+Tutorial project files in caesar/
 
-docker-compose provided for local run
+To start GUI run
 
-Functions sources provided in ./functions/**
+./gradlew run
 
-Unable to run properly getting exception provided in exception.log, which can be local issue
+and select configuration from appropriate folder
