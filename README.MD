@@ -1,5 +1,6 @@
 Test assignment for Apollo
 
+
 Test assignment files in
 >assignment/
 
@@ -15,4 +16,9 @@ and select from appropriate folder
 ```
 Docker images build with open-faas.
 Run .../openfaas/build.sh
+```
+
+For debug change in openfaas/template/python3-flask/Dockerfile value to:
+```
+ENV fprocess="python -u index.py"
 ```

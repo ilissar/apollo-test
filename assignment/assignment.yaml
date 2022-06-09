@@ -31,7 +31,7 @@ workflowBody:
           type: "number"
           source: "assignment/thresholdSize"
       dataOuts:
-        - name: "stringToProcess"
+        - name: "stringArr"
           type: "collection"
         - name: "count"
           type: "number"
@@ -74,6 +74,6 @@ dataOuts:
   - name: "encodedString"
     type: "string"
     source: "Assemble/encodedString"
-  - name: "result"
+  - name: "count"
     type: "number"
     source: "Split/count"

@@ -4,7 +4,7 @@ def cloud_function(json_input):
     # count = json_input["count"]
 
     # Processing
-    encoded_string = "".join(processed_string)
+    encoded_string = " ".join(processed_string)
     # count_result = 0 + count
     # return the result
     res = {

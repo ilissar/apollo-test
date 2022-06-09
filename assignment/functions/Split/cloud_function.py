@@ -14,6 +14,8 @@ def cloud_function(json_input):
     # should be more than 0
     threshold_size = json_input["thresholdSize"]
 
+    count = len(re.findall(pattern_word, original))
+
     # Processing
     pattern = "("
     pattern_template = "\w+\s*"
@@ -48,11 +50,9 @@ def cloud_function(json_input):
                 count_previous = count_current
                 index += 1
 
-    for elem in result:
-        print(elem)
     # return the result
     res = {
-        "stringToProcess": result,
+        "stringArr": result,
         "count": count
     }
     return res
