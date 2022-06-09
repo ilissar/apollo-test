@@ -1,10 +1,18 @@
 Test assignment for Apollo
 
-Test assignment files in assignment/
-Tutorial project files in caesar/
+Test assignment files in
+>assignment/
+
+Tutorial project files in 
+>caesar/
 
 To start GUI run
+>./gradlew run
 
-./gradlew run
+and select from appropriate folder
+>configuration.xml
 
-and select configuration from appropriate folder
+```
+Docker images build with open-faas.
+Run .../openfaas/build.sh
+```
