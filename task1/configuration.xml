@@ -5,11 +5,11 @@
     <property name="delayInSeconds">0</property>
   </module>
   <module class="at.uibk.dps.ee.docker.modules.LocalDockerModule">
-    <property name="usedOs">Windows</property>
+    <property name="usedOs">Unix</property>
   </module>
   <module class="at.uibk.dps.ee.enactables.modules.CoreFunctionsModule"/>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
-    <property name="filePath">./assignment/input.json</property>
+    <property name="filePath">./task1/input.json</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.LoggingModule">
     <property name="pathToConfigFile">./logback.xml</property>
@@ -24,7 +24,7 @@
     <property name="updatePeriodMs">100</property>
   </module>
   <module class="at.uibk.dps.sc.core.modules.SchedulerModule">
-    <property name="schedulingMode">DynamicSizeResourcesSelection</property>
+    <property name="schedulingMode">Random</property>
     <property name="mappingsToPick">1</property>
     <property name="sizeThresholdKb">10</property>
     <property name="resourceArbitration">FCFS</property>

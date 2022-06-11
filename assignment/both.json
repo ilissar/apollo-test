@@ -1,0 +1,54 @@
+[
+  {
+    "functionType": "Split",
+    "resources": [
+      {
+        "type": "Local",
+        "properties": {
+          "Image": "ilissar/split"
+        }
+      },
+      {
+        "type": "Serverless",
+        "properties": {
+          "Uri": "http://127.0.0.1:8080/Split"
+        }
+      }
+
+    ]
+  },
+  {
+    "functionType": "Process",
+    "resources": [
+      {
+        "type": "Local",
+        "properties": {
+          "Image": "ilissar/process"
+        }
+      },
+      {
+        "type": "Serverless",
+        "properties": {
+          "Uri": "http://127.0.0.1:8081/Process"
+        }
+      }
+    ]
+  },
+  {
+    "functionType": "Assemble",
+    "resources": [
+      {
+        "type": "Local",
+        "properties": {
+          "Image": "ilissar/assemble"
+        }
+      },
+      {
+        "type": "Serverless",
+        "properties": {
+          "Uri": "http://127.0.0.1:8082/Assemble"
+        }
+      }
+    ]
+  }
+]

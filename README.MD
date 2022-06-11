@@ -1,11 +1,13 @@
 Test assignment for Apollo
 
 
-Test assignment files in
+Tutorial project files in
+>caesar/
+
+All test assignment files in
 >assignment/
 
-Tutorial project files in 
->caesar/
+Exact configurations for each task provided in appropriate task folder
 
 To start GUI run
 >./gradlew run

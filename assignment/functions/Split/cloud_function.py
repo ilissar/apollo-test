@@ -17,12 +17,7 @@ def cloud_function(json_input):
     count = len(re.findall(pattern_word, original))
 
     # Processing
-    pattern = "("
-    pattern_template = "\w+\s*"
-    pattern_result = ""
-    for x in range(batch_size):
-        pattern_result += pattern_template
-    pattern += pattern_result + ")\s"
+    pattern = "(\w+\s*{" + str(batch_size) + "})\s"
     result = re.split(pattern, original + " ")
     result = list(filter(None, result))
 
@@ -41,7 +36,6 @@ def cloud_function(json_input):
                         result[index] = str(elem) + ";s"
                     if found_in_current + count_previous > threshold_size:
                         to_save = threshold_size - count_previous
-                        to_delete = found_in_current + count_previous - threshold_size
                         if to_save == 0:
                             result[index] = elem + ";d"
                         else:
