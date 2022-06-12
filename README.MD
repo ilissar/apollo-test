@@ -9,6 +9,8 @@ All test assignment files in
 
 Exact configurations for each task provided in appropriate task folder
 
+To simulate  AWS serverless used local docker-compose file   
+
 To start GUI run
 >./gradlew run
 
